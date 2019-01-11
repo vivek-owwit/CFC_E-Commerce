@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "464848344928",
+    "firebase_url": "https://yef-app-1f130.firebaseio.com",
+    "project_id": "yef-app-1f130",
+    "storage_bucket": "yef-app-1f130.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464848344928:android:aafaeb3d7cc59366",
+        "android_client_info": {
+          "package_name": "com.vivek.loginpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464848344928-s6vgcktvsjultn0lf1hh2r8lua3k50kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vivek.loginpage",
+            "certificate_hash": "9d3b84f404ae750c96341070ece09481569ad84a"
+          }
+        },
+        {
+          "client_id": "464848344928-mnfk8i0rsfkadj1lp5kgsn4o14vh2oea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdM6bsGoXlFP3Mooruzxr11lPgtu4AMTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464848344928-mnfk8i0rsfkadj1lp5kgsn4o14vh2oea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

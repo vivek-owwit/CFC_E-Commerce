@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e17350"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/login_tv_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="25dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/sign_in"
+                android:textColor="#eae7e7"
+                android:textSize="30sp"
+                android:paddingRight="25dp"
+                android:paddingLeft="15dp" />
+
+            <FrameLayout
+                android:id="@+id/frame_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etName"
+                    android:layout_width="270dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/login_textview"
+                    android:hint="@string/email"
+                    android:inputType="textPersonName"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="45dp"
+                    android:textColor="#0b0b0b"
+                    android:textColorHint="#dfdfdf"
+                    android:textStyle="normal"
+                    android:typeface="sans"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="45dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/icon_new_user"
+                    android:layout_marginLeft="10dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#dedbdb">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="270dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/login_textview"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="45dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#e6e4e4"
+                        android:textStyle="normal"
+                        android:typeface="sans"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="45dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/password"
+                    android:layout_marginLeft="10dp" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/curved_button"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tvForgotPassword"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="40dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="0dp"
+                android:text="Forgot Password? "
+                android:textColor="#eae7e7"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/login_profile_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logoyef" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="500dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="New User!! "
+            android:textColor="#eae7e7"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRegister"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/don_t_have_an_account_register_here"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

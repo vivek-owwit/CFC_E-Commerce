@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.vivek.loginpage"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".startup.FrescoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_bag"
+        android:label="CFC"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".startup.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".options.SearchResultsActivity"/>
+        </activity>
+        <activity
+            android:name=".startup.MainActivity"
+            android:label="CFC"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".fragments.ViewPagerActivity"/>
+        <activity android:name=".product.ItemDetailsActivity">
+        </activity>
+        <activity
+            android:name=".options.WishlistActivity"
+            android:label="@string/my_wishlist">
+        </activity>
+        <activity
+            android:name=".options.CartListActivity"
+            android:label="@string/my_cart">
+        </activity>
+        <activity android:name=".options.SearchResultActivity">
+
+            <!-- to identify this activity as "searchable.xml" -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:name=".miscellaneous.EmptyActivity">
+        </activity>
+        <activity
+            android:name=".Iogin.SecondActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Iogin.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Iogin.Password"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Iogin.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Iogin.RegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Iogin.UpdatePassword"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Iogin.UpdateProfile"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
